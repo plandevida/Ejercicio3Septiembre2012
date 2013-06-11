@@ -39,16 +39,22 @@ int princesaCercana(Arbin<int> arbol, int nivel, int &nivelMasCercano) {
     if ( !arbol.esVacio()) {
         
         if ( nivel < nivelMasCercano ) {
-        
-            Arbin<int> iz = arbol.hijoIz();
-            Arbin<int> dr = arbol.hijoDr();
             
-            if ( ( !iz.esVacio() && iz.raiz() == 2 ) || ( !dr.esVacio() && dr.raiz() == 2 ) ) {
+            if ( arbol.raiz() == 2 ) {
+                
                 nivelMasCercano = nivel + 1;
             }
             else {
-                princesaCercana(arbol, nivel + 1, nivelMasCercano);
-                princesaCercana(arbol, nivel + 1, nivelMasCercano);
+                Arbin<int> iz = arbol.hijoIz();
+                Arbin<int> dr = arbol.hijoDr();
+                
+                if ( ( !iz.esVacio() && iz.raiz() == 2 ) || ( !dr.esVacio() && dr.raiz() == 2 ) ) {
+                    nivelMasCercano = nivel + 1;
+                }
+                else {
+                    princesaCercana(arbol, nivel + 1, nivelMasCercano);
+                    princesaCercana(arbol, nivel + 1, nivelMasCercano);
+                }
             }
         }
     }
@@ -87,7 +93,7 @@ void printArbolAux(const Arbin<int> &arbol, int nivel) {
 int main(int argc, const char * argv[])
 {
     
-    Arbin<int> arbol(Arbin<int>( Arbin<int>( Arbin<int>( Arbin<int>( Arbin<int>(), 2, Arbin<int>() ) ), 1, Arbin<int>() ), 0, Arbin<int>( Arbin<int>(Arbin<int>(), 2, Arbin<int>() ), 0, Arbin<int>(Arbin<int>(), 2, Arbin<int>() )) ), 0, Arbin<int>( Arbin<int>(), 0, Arbin<int>() ) );
+    Arbin<int> arbol(Arbin<int>( Arbin<int>( Arbin<int>( Arbin<int>( Arbin<int>(), 2, Arbin<int>() ) ), 1, Arbin<int>() ), 0, Arbin<int>( Arbin<int>(Arbin<int>(), 2, Arbin<int>() ), 0, Arbin<int>(Arbin<int>(), 2, Arbin<int>() )) ), 2, Arbin<int>( Arbin<int>(), 2, Arbin<int>() ) );
     
     printArbolAux(arbol, 0);
     
