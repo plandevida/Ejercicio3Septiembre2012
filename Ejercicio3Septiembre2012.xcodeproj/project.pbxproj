@@ -28,6 +28,15 @@
 		FBE634CA1767B36F00E5A943 /* Ejercicio3Septiembre2012 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Ejercicio3Septiembre2012; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBE634CD1767B36F00E5A943 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FBE634CF1767B36F00E5A943 /* Ejercicio3Septiembre2012.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Ejercicio3Septiembre2012.1; sourceTree = "<group>"; };
+		FBE634D61767B3A000E5A943 /* Arbin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Arbin.h; sourceTree = "<group>"; };
+		FBE634D71767B3A000E5A943 /* ArbinConCopias.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArbinConCopias.h; sourceTree = "<group>"; };
+		FBE634D81767B3A000E5A943 /* Arbus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Arbus.h; sourceTree = "<group>"; };
+		FBE634D91767B3A000E5A943 /* Cola.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cola.h; sourceTree = "<group>"; };
+		FBE634DA1767B3A000E5A943 /* DCola.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCola.h; sourceTree = "<group>"; };
+		FBE634DB1767B3A000E5A943 /* Excepciones.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Excepciones.h; sourceTree = "<group>"; };
+		FBE634DC1767B3A000E5A943 /* Lista.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lista.h; sourceTree = "<group>"; };
+		FBE634DD1767B3A000E5A943 /* Pila.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pila.h; sourceTree = "<group>"; };
+		FBE634DE1767B3A000E5A943 /* PilaLE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PilaLE.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +69,15 @@
 		FBE634CC1767B36F00E5A943 /* Ejercicio3Septiembre2012 */ = {
 			isa = PBXGroup;
 			children = (
+				FBE634D61767B3A000E5A943 /* Arbin.h */,
+				FBE634D71767B3A000E5A943 /* ArbinConCopias.h */,
+				FBE634D81767B3A000E5A943 /* Arbus.h */,
+				FBE634D91767B3A000E5A943 /* Cola.h */,
+				FBE634DA1767B3A000E5A943 /* DCola.h */,
+				FBE634DB1767B3A000E5A943 /* Excepciones.h */,
+				FBE634DC1767B3A000E5A943 /* Lista.h */,
+				FBE634DD1767B3A000E5A943 /* Pila.h */,
+				FBE634DE1767B3A000E5A943 /* PilaLE.h */,
 				FBE634CD1767B36F00E5A943 /* main.cpp */,
 				FBE634CF1767B36F00E5A943 /* Ejercicio3Septiembre2012.1 */,
 			);
